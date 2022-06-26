@@ -23,9 +23,9 @@ public class Task {
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer ID;
-    @Column(name = "作成日時", nullable = false)
+    @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
-    @Column(name = "更新日時", nullable = false)
+    @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
     @Column(name = "content", length = 255, nullable = false)
     private String content;
